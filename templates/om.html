@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>{{ navn }}</h1>
+
+    <p>Alder: {{ alder }}</p>
+    {% if alder >= 18 %}
+        <strong>Du er myndig</strong>
+    {% else %}
+        <strong>Du er under 18</strong>
+    {% endif %}
+
+    <p>Klasse: {{ klasse }}</p>
+    <p>Fag: {{ fag }}</p>
+    <p>Favorittspråk: {{ favorittspråk }}</p>
+    <strong>Skole: {{ skole }}</strong>
+
+    {% if poeng >= 50 %}
+        <strong>Du fikk {{ poeng }} poeng og har bestått</strong>
+    {% else %}
+        <strong>Du fikk {{ poeng }} og bestod ikke</strong>
+    {% endif %}
+   
+
+</body>
+</html>
